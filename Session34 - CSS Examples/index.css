@@ -1,0 +1,72 @@
+/* Universal Selector */
+* {
+  background-color: grey;
+}
+/* Element Selector */
+h1 {
+  color: blue;
+}
+/* Class Selector */
+.name {
+  color: rgb(62, 255, 62);
+}
+/* ID Selector */
+#content {
+  color: coral;
+  background-color: black;
+}
+/* Grouping Selectors */
+
+div {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  width: 30%;
+  height: 100px;
+  border: 2px solid black;
+  background-color: black;
+  margin: 10px 0px 0px 0px;
+  padding: 10px 0px 0px 10px;
+}
+.bg-red {
+  background-color: red;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-color: blueviolet;
+}
+.grid-item {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  flex: 1 1 calc(33.33% - 10px);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50%);
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 33.33%;
+  }
+}
